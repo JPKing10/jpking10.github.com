@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+a {
+    color: #fff;
+    font-weight: bolder;
+    text-decoration-color: #07e3d6;
+}
+
+section.jpk-header {
+    height: 100%;
+    width: 100%;
+    background: #3d657d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.jpk-header h1, h2, h3, p {
+    color: #FCFCFC;
+}
+
+section.jpk-header h1 {
+    margin-top: 0;
+}
+
+.jpk-header .section-main h1:before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #F4E04D;
+    border: none;
+    margin: 0;
+    margin-bottom: 0.7rem;
+}
+
+.jpk-header .section-main {
+    align-self: flex-start;
+    margin: 0.5rem;
+}
+
+@media only screen and (min-width: 30rem) {
+    .jpk-header .section-main {
+        margin: 5rem;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    .jpk-header .section-main {
+        margin: 10rem;
+    }
+}
+
+.section-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome {
+    max-width: 40rem;
+}
+
+.projects {
+    max-width: 900px;
+    margin-top: 100px;
+    border: 2px solid #27282B;
+    border-radius: 4px;
+    padding: 2rem 2.5rem;
+    display: flex;
+}
+
+.projects > * {
+    flex: 1;
+}
+
+.projects .zealous-digital::before {
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    position: absolute;
+    border-radius: 2px;
+    background-color: #42c299;
+}
