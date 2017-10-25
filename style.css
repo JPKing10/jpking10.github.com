@@ -39,9 +39,10 @@ a {
 }
 
 section.jpk-header {
+	position: absolute;
+	z-index: 999;
     min-height: 100%;
     min-width: 100%;
-    background: #3d657d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,6 +121,7 @@ section.jpk-header h1 {
 }
 
 #particles-js{
+    background: #3d657d;
 	position: absolute;
   width: 100%;
   height: 100%;
