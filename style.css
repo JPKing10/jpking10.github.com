@@ -8,17 +8,17 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
 h2 {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     line-height: 3rem;
 }
 
@@ -29,28 +29,33 @@ h3 {
 
 p {
     font-size: 1.25rem;
-    font-weight: 300;
+	line-height: 2.1rem;
+    font-weight: 400;
 }
 
 a {
-    color: #fff;
-    font-weight: bolder;
-    text-decoration-color: #07e3d6;
+    color: #667a83;
+	text-decoration: none;
+	border-bottom: 2px solid;
+	transition: all 0.25s ease-out;
 }
 
-section.jpk-header {
-	position: absolute;
-	z-index: 999;
-    min-height: 100%;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+a:hover {
+	background: #fed100;
+	border-bottom: none;
+	border-radius: 2px;
+	
+}
+
+span.highlight {
+	background: rgba(254, 209, 0, 0.1);
+	border-radius: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 
 section.jpk-header h1, h2, h3, p {
-    color: #FCFCFC;
+    color: #667a83;
 }
 
 section.jpk-header h1 {
@@ -68,63 +73,41 @@ section.jpk-header h1 {
     margin-bottom: 0.7rem;
 }
 
-.jpk-header .section-main {
-    align-self: flex-start;
-    margin: 0.5rem;
-}
-
-@media only screen and (min-width: 30rem) {
-    .jpk-header .section-main {
-        margin: 5rem;
-    }
-}
-
-@media only screen and (min-width: 60rem) {
-    .jpk-header .section-main {
-        margin: 10rem;
-    }
+section.jpk-header {
+	background: #fdf6e3;
+	min-height: 100vh;
 }
 
 .section-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
 }
 
 .welcome {
-    max-width: 40rem;
+	padding-top: 10vh;
+	display: block;
+	animation: fadein 2s ease-out;
 }
 
-.projects {
-    max-width: 900px;
-    margin-top: 100px;
-    border: 2px solid #27282B;
-    border-radius: 4px;
-    padding: 2rem 2.5rem;
-    display: flex;
+.info {
+	padding-top: 5vh;
 }
 
-.projects > * {
-    flex: 1;
+.welcome, .info { 
+	max-width: 40rem;
+	margin: 0 auto;
 }
 
-.projects .zealous-digital::before {
-    content: '';
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    position: absolute;
-    border-radius: 2px;
-    background-color: #42c299;
-}
+//---------------------------------
+//Animations
+//---------------------------------
 
-#particles-js{
-    background: #3d657d;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+@keyframes fadein {
+	0% { 
+		opacity: 0; 
+	}
+	100% { 
+		opacity: 1; 
+	}
 }
